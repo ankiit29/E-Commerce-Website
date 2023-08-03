@@ -1,0 +1,93 @@
+@import "../../../css-config/mixins.scss";
+
+.newsletter-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #f9f9f9 url("../../../assets/newsletter-bg.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .newsletter-content {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 2rem auto;
+    }
+
+    .small-text {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        text-transform: uppercase;
+        color: black;
+    }
+
+    .big-text {
+        margin-bottom: 1.3rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding: 0 2rem;
+
+        @include md {
+            font-size: 1.8rem;
+        }
+    }
+
+    .form {
+        display: flex;
+        gap: 0.3rem;
+        margin-bottom: 0.6;
+
+        input {
+            width: 15rem;
+            height: 2.5rem;
+            border-radius: 0;
+            border: 1px solid black;
+            padding: 0 1rem;
+            outline: 0;
+
+            @include md {
+                width: 19rem;
+            }
+        }
+
+        button {
+            outline: 0;
+            border: 0;
+            height: 2.5rem;
+            width: 6rem;
+            cursor: pointer;
+            color: #f9f9f9;
+            background-color: #8e2de2;
+            border-bottom: 3px solid #8e2de2;
+        }
+    }
+
+    .text {
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 1rem;
+        margin: 1rem;
+
+        .icons{
+            width: 2rem;
+            height: 2rem;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 50%;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    }
+}

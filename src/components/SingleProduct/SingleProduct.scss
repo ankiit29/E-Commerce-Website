@@ -1,0 +1,140 @@
+@import "../../css-config/mixins.scss";
+
+.single-product-main-content {
+    overflow: hidden;
+    padding: 20px;
+    background-color: #f7f7f7;
+
+    .layout {
+        max-width: 1200px;
+        margin: 2rem auto;
+
+        .single-product-page {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+
+            .left {
+                background-color: rgba(0, 0, 0, 0.05);
+                flex: 0 0 40%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .right {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0 20px;
+
+                .name {
+                    font-size: 24px;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                }
+
+                .price {
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                }
+
+                .desc {
+                    font-size: 14px;
+                    margin-bottom: 20px;
+                }
+
+                .cart-buttons {
+                    display: flex;
+                    flex-direction: column;
+                    align-items:center;
+                    justify-content: space-around;
+                    margin: 20px;
+
+                    .quantity-buttons {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        span {
+                            font-size: 1.5rem;
+                            display: inline-block;
+                            width: 40px;
+                            height: 40px;
+                            border: 1px solid #ccc;
+                            border-radius: 10%;
+                            text-align: center;
+                            line-height: 25px;
+                            cursor: pointer;
+                            margin-bottom: 5px;
+                            padding: 5px;
+
+                        }
+                    }
+
+                    .add-to-cart-button {
+                        display: inline-flex;
+                        align-items: center;
+                        padding: 10px 20px;
+                        background-color: #8e2de2;
+                        border-bottom: 3px solid #8e2de2;
+                        color: #fff;
+                        border: none;
+                        border-radius: 4px;
+                        cursor: pointer;
+
+                        svg {
+                            margin-right: 5px;
+                        }
+
+                        &:hover {
+                            background-color: #222222;
+                        }
+                    }
+                }
+
+                .divider {
+                    border-top: 1px solid #ccc;
+                    margin: 20px 0;
+                }
+
+                .info-item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-bottom: 10px;
+
+                    .text-bold {
+                        font-weight: bold;
+                        margin-right: 5px;
+                    }
+
+                    span {
+                        margin-right: 5px;
+                        margin: 0.2rem;
+
+                        span {
+                            font-weight: lighter;
+                            padding-left: 0.1rem;
+                        }
+                    }
+
+                    .social-icons {
+                        display: inline-flex;
+                        align-items: center;
+
+                        svg {
+                            margin-right: 5px;
+                            cursor: pointer;
+
+                            &:hover {
+                                color: #999;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
